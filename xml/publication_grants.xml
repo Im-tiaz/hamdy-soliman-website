@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allgrants>
+
+    <grant id="1">
+        <title>Research Student Support for Patent Development Combining Sensor Systems, Machine Learning, and Security</title>
+        <agency>NMT Research Park, formerly NMT Research Foundation, via NMT President's Office</agency>
+        <amount>Undisclosed</amount>
+        <period>Ongoing</period>
+        <role>Principal Investigator</role>
+        <description>Funding provided to support research students working on the development and advancement of previously filed and ongoing patents integrating sensor technologies, machine learning, and security systems.</description>
+    </grant>
+
+    <grant id="2">
+        <title>Advances in Machine Learning Methods: Methodologies for a Data Science Approach to Applications of Genetics</title>
+        <agency>Los Alamos National Laboratory (LANL)</agency>
+        <amount>$91,944</amount>
+        <period>2021</period>
+        <role>Co-Principal Investigator</role>
+        <pi_info>Principal Investigator: Dr. Mazumdar</pi_info>
+        <description>Research focused on advancing machine learning methodologies within a data science framework applied to genetics-based applications.</description>
+    </grant>
+
+</allgrants>

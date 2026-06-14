@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Publications by Dr. Hamdy Soliman">
+  <title>Publications — Dr. Hamdy Soliman</title>
+
+  <!-- Bootstrap 3 CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Glyphicons come with Bootstrap 3 -->
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+<nav class="navbar navbar-custome navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-main">
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <span class="glyphicon glyphicon-home glyphicon_extra_padding"></span>Dr. Hamdy <strong>Soliman</strong>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="nav-main">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="publications.html"><span class="glyphicon glyphicon-pencil glyphicon_extra_padding"></span>Publications</a></li>
+        <li><a href="research.html"><span class="glyphicon glyphicon-grain glyphicon_extra_padding"></span>Research</a></li>
+        <li><a href="courses.html"><span class="glyphicon glyphicon-blackboard glyphicon_extra_padding"></span>Courses</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="mailto:hamdy.soliman@nmt.edu"><span class="glyphicon glyphicon-envelope glyphicon_extra_padding"></span>Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+      <div class="row fade-in one">
+        <div class="col-lg-12">
+          <h1 class="page-header text-right">Publications</h1>
+        </div>
+      </div>
+
+      <section>
+        <article class="well_with_transparent_bg well-lg fade-in two" style="text-align:justify">
+          <b>Dr. Hamdy's work focuses on</b> Computer Networks, Wireless Sensor Network (WSNs) Applications, and Neural Network Applications.
+        </article>
+      </section>
+
+      <div class="row fade-in three">
+        <div class="col-lg-12">
+          <div class="well_with_transparent_bg text-primary">
+            <h3 style="margin-top:0">
+              <span class="glyphicon glyphicon-book glyphicon_extra_padding"></span>Selected Publications
+              <span style="float:right; font-size:0.6em; margin-top:6px;">
+                <a target="_blank" href="https://scholar.google.com/citations?user=AJvh91MAAAAJ">
+                  <span class="glyphicon glyphicon-new-window"></span> Google Scholar
+                </a>
+              </span>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- JOURNALS -->
+      <section class="fade-in four">
+        <h3 class="section-header">
+          <span class="glyphicon glyphicon-open-file"></span>Journal Articles
+        </h3>
+        <div id="journal_section"><p class="text-muted">Loading…</p></div>
+      </section>
+
+      <!-- CONFERENCES -->
+      <section class="fade-in four">
+        <h3 class="section-header">
+          <span class="glyphicon glyphicon-plane"></span>Conference Papers
+        </h3>
+        <div id="conference_section"><p class="text-muted">Loading…</p></div>
+      </section>
+
+      <!-- BOOKS -->
+      <section class="fade-in four">
+        <h3 class="section-header">
+          <span class="glyphicon glyphicon-print"></span>Book Chapters
+        </h3>
+        <div id="books_section"><p class="text-muted">Loading…</p></div>
+      </section>
+
+      <!-- GRANTS -->
+      <section class="fade-in four">
+        <h3 class="section-header">
+          <span class="glyphicon glyphicon-usd"></span>Grants
+        </h3>
+        <div id="grants_section"><p class="text-muted">Loading…</p></div>
+      </section>
+
+    </div>
+  </div>
+
+  <footer class="navbar navbar-default" style="margin-top:30px;">
+    <div class="container-fluid">
+      <hr>
+      <div class="row">
+        <div class="col-sm-4 footer_content"><a target="_blank" href="https://www.cs.nmt.edu/">Dept. of CSE, NMT</a></div>
+        <div class="col-sm-4 footer_content"><a target="_blank" href="http://www.nmt.edu/"><img src="nmt_logo.jpg" alt="New Mexico Tech" style="height:36px;"></a></div>
+        <div class="col-sm-4 footer_content">Copyright &copy; Hamdy Soliman, 2026</div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<a id="back-to-top" href="#" class="btn back-to-top" role="button">
+  <span class="glyphicon glyphicon-chevron-up"></span>
+</a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+// ---- Back to top ----
+$(window).scroll(function(){ $('#back-to-top').toggle($(this).scrollTop() > 200); });
+$('#back-to-top').click(function(){ $('html,body').animate({scrollTop:0},400); return false; });
+
+// ---- XML helpers ----
+function getText(el, tag){ var n=el.getElementsByTagName(tag)[0]; return n ? (n.textContent||n.innerText||'').trim() : ''; }
+
+// ---- Load journals ----
+fetch('xml/publication_journal.xml')
+  .then(r=>r.text()).then(str=>{
+    var parser=new DOMParser();
+    var xml=parser.parseFromString(str,'text/xml');
+    var pubs=xml.getElementsByTagName('publication');
+    var html='<table class="table" style="table-layout:fixed;width:100%"><tbody>';
+    for(var i=0;i<pubs.length;i++){
+      var p=pubs[i];
+      var title=getText(p,'name');
+      var uri=getText(p,'uri');
+      var authors=getText(p,'authors');
+      var publisher=getText(p,'publisher');
+      var details=getText(p,'publication_details');
+      var year=getText(p,'year_of_publication');
+      var link=(uri && uri!=='#') ? '<a href="'+uri+'" target="_blank">'+escHtml(title)+'</a>' : escHtml(title);
+      html+='<tr class="pub-row"><td class="pub-num">'+(i+1)+'.</td><td class="pub-title">'+link;
+      html+='<div class="pub-meta"><span class="pub-authors">'+escHtml(authors)+'</span>';
+      html+=' &mdash; <strong>'+escHtml(publisher)+'</strong>';
+      if(details) html+=', <em>'+escHtml(details)+'</em>';
+      if(year) html+=' <span class="pub-year">('+escHtml(year)+')</span>';
+      html+='</div></td></tr>';
+    }
+    html+='</tbody></table>';
+    document.getElementById('journal_section').innerHTML=html;
+  }).catch(function(){ document.getElementById('journal_section').innerHTML='<p class="text-danger">Could not load journal data.</p>'; });
+
+// ---- Load conferences ----
+fetch('xml/publication_conference.xml')
+  .then(r=>r.text()).then(str=>{
+    var parser=new DOMParser();
+    var xml=parser.parseFromString(str,'text/xml');
+    var pubs=xml.getElementsByTagName('publication');
+    var html='<table class="table" style="table-layout:fixed;width:100%"><tbody>';
+    for(var i=0;i<pubs.length;i++){
+      var p=pubs[i];
+      var title=getText(p,'name');
+      var uri=getText(p,'uri');
+      var authors=getText(p,'authors');
+      var publisher=getText(p,'publisher');
+      var details=getText(p,'publication_details');
+      var year=getText(p,'year_of_publication');
+      var link=(uri && uri!=='#') ? '<a href="'+uri+'" target="_blank">'+escHtml(title)+'</a>' : escHtml(title);
+      html+='<tr class="pub-row"><td class="pub-num">'+(i+1)+'.</td><td class="pub-title">'+link;
+      html+='<div class="pub-meta"><span class="pub-authors">'+escHtml(authors)+'</span>';
+      html+=' &mdash; <strong>'+escHtml(publisher)+'</strong>';
+      if(details) html+=', <em>'+escHtml(details)+'</em>';
+      if(year) html+=' <span class="pub-year">('+escHtml(year)+')</span>';
+      html+='</div></td></tr>';
+    }
+    html+='</tbody></table>';
+    document.getElementById('conference_section').innerHTML=html;
+  }).catch(function(){ document.getElementById('conference_section').innerHTML='<p class="text-danger">Could not load conference data.</p>'; });
+
+// ---- Load books ----
+fetch('xml/publication_books.xml')
+  .then(r=>r.text()).then(str=>{
+    var parser=new DOMParser();
+    var xml=parser.parseFromString(str,'text/xml');
+    var books=xml.getElementsByTagName('book');
+    var html='<table class="table" style="table-layout:fixed;width:100%"><tbody>';
+    for(var i=0;i<books.length;i++){
+      var p=books[i];
+      var title=getText(p,'name');
+      var uri=getText(p,'uri');
+      var authors=getText(p,'authors');
+      var publisher=getText(p,'publisher');
+      var details=getText(p,'publication_details');
+      var year=getText(p,'year_of_publication');
+      var link=(uri && uri!=='#') ? '<a href="'+uri+'" target="_blank">'+escHtml(title)+'</a>' : escHtml(title);
+      html+='<tr class="pub-row"><td class="pub-num">'+(i+1)+'.</td><td class="pub-title">'+link;
+      html+='<div class="pub-meta"><span class="pub-authors">'+escHtml(authors)+'</span>';
+      html+=' &mdash; <strong>'+escHtml(publisher)+'</strong>';
+      if(details) html+=', <em>'+escHtml(details)+'</em>';
+      if(year) html+=' <span class="pub-year">('+escHtml(year)+')</span>';
+      html+='</div></td></tr>';
+    }
+    html+='</tbody></table>';
+    document.getElementById('books_section').innerHTML=html;
+  }).catch(function(){ document.getElementById('books_section').innerHTML='<p class="text-danger">Could not load book data.</p>'; });
+
+// ---- Load grants ----
+fetch('xml/publication_grants.xml')
+  .then(r=>r.text()).then(str=>{
+    var parser=new DOMParser();
+    var xml=parser.parseFromString(str,'text/xml');
+    var grants=xml.getElementsByTagName('grant');
+    var html='';
+    for(var i=0;i<grants.length;i++){
+      var g=grants[i];
+      var title=getText(g,'title');
+      var agency=getText(g,'agency');
+      var amount=getText(g,'amount');
+      var period=getText(g,'period');
+      var role=getText(g,'role');
+      var pi=getText(g,'pi_info');
+      var desc=getText(g,'description');
+      html+='<div class="grant-card">';
+      html+='<div class="grant-title">'+escHtml(title)+'</div>';
+      html+='<div class="grant-agency"><strong>'+escHtml(agency)+'</strong>';
+      if(amount) html+=' &nbsp;|&nbsp; '+escHtml(amount);
+      if(period) html+=' &nbsp;|&nbsp; '+escHtml(period);
+      html+='</div>';
+      html+='<div class="grant-meta"><em>Role:</em> '+escHtml(role);
+      if(pi) html+=' &nbsp;&mdash;&nbsp; '+escHtml(pi);
+      html+='</div>';
+      if(desc) html+='<div style="font-size:0.88em;color:#555;margin-top:6px;">'+escHtml(desc)+'</div>';
+      html+='</div>';
+    }
+    document.getElementById('grants_section').innerHTML=html;
+  }).catch(function(){ document.getElementById('grants_section').innerHTML='<p class="text-danger">Could not load grant data.</p>'; });
+
+function escHtml(s){
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+</script>
+</body>
+</html>
