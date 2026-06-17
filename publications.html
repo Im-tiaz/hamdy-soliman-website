@@ -59,7 +59,7 @@
             <h3 style="margin-top:0">
               <span class="glyphicon glyphicon-book glyphicon_extra_padding"></span>Selected Publications
               <span style="float:right; font-size:0.6em; margin-top:6px;">
-                <a target="_blank" href="https://scholar.google.com/citations?user=AJvh91MAAAAJ">
+                <a target="_blank" href="https://scholar.google.com/citations?user=3aSBCKQAAAAJ&hl=en">
                   <span class="glyphicon glyphicon-new-window"></span> Google Scholar
                 </a>
               </span>
@@ -67,6 +67,14 @@
           </div>
         </div>
       </div>
+
+      <!-- PATENTS -->
+      <section class="fade-in four">
+        <h3 class="section-header">
+          <span class="glyphicon glyphicon-hourglass"></span>Patents
+        </h3>
+        <div id="patent_section"><p class="text-muted">Loading…</p></div>
+      </section>
 
       <!-- JOURNALS -->
       <section class="fade-in four">
@@ -128,6 +136,33 @@ $('#back-to-top').click(function(){ $('html,body').animate({scrollTop:0},400); r
 
 // ---- XML helpers ----
 function getText(el, tag){ var n=el.getElementsByTagName(tag)[0]; return n ? (n.textContent||n.innerText||'').trim() : ''; }
+
+// ---- Load patents ----
+fetch('xml/publication_patents.xml')
+  .then(r=>r.text()).then(str=>{
+    var parser=new DOMParser();
+    var xml=parser.parseFromString(str,'text/xml');
+    var pubs=xml.getElementsByTagName('publication');
+    var html='<table class="table" style="table-layout:fixed;width:100%"><tbody>';
+    for(var i=0;i<pubs.length;i++){
+      var p=pubs[i];
+      var title=getText(p,'name');
+      var uri=getText(p,'uri');
+      var authors=getText(p,'authors');
+      var publisher=getText(p,'publisher');
+      var details=getText(p,'publication_details');
+      var year=getText(p,'year_of_publication');
+      var link=(uri && uri!=='#') ? '<a href="'+uri+'" target="_blank">'+escHtml(title)+'</a>' : escHtml(title);
+      html+='<tr class="pub-row"><td class="pub-num">'+(i+1)+'.</td><td class="pub-title">'+link;
+      html+='<div class="pub-meta"><span class="pub-authors">'+escHtml(authors)+'</span>';
+      html+=' &mdash; <strong>'+escHtml(publisher)+'</strong>';
+      if(details) html+=', <em>'+escHtml(details)+'</em>';
+      if(year) html+=' <span class="pub-year">('+escHtml(year)+')</span>';
+      html+='</div></td></tr>';
+    }
+    html+='</tbody></table>';
+    document.getElementById('patent_section').innerHTML=html;
+  }).catch(function(){ document.getElementById('patent_section').innerHTML='<p class="text-danger">Could not load patent data.</p>'; });
 
 // ---- Load journals ----
 fetch('xml/publication_journal.xml')
