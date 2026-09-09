@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="doc_images/_head.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research — Dr. Hamdy Soliman</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+<nav class="navbar navbar-custome navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-main">
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home glyphicon_extra_padding"></span>Dr. Hamdy <strong>Soliman</strong></a>
+    </div>
+    <div class="collapse navbar-collapse" id="nav-main">
+      <ul class="nav navbar-nav">
+        <li><a href="publications.html"><span class="glyphicon glyphicon-pencil glyphicon_extra_padding"></span>Publications</a></li>
+        <li class="active"><a href="research.html"><span class="glyphicon glyphicon-grain glyphicon_extra_padding"></span>Research</a></li>
+        <li><a href="courses.html"><span class="glyphicon glyphicon-blackboard glyphicon_extra_padding"></span>Courses</a></li>
+        <li><a href="students.html"><span class="glyphicon glyphicon-user glyphicon_extra_padding"></span>Students</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="contact.html"><span class="glyphicon glyphicon-envelope glyphicon_extra_padding"></span>Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+      <div class="row fade-in one">
+        <div class="col-lg-12">
+          <h1 class="page-header text-right"><small>Recent</small> Research <small>Interests</small></h1>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div class="row fade-in two">
+        <div class="col-md-6" style="text-align:justify;">
+          <p>Dr. Hamdy S. Soliman's research is centered on machine learning and neural network modeling, with emphasis on classification, association, and generalization in complex systems. His work spans a wide range of ANN models (LVQ, BP, BAM, Hopfield, ART, KSOFM, Deep Learning) applied to big data analytics, cloud computing management, intelligent sensor networks, and image processing.</p>
+          <p>His research focuses on smart and secure wireless sensor networks (SS-WSNs) for early detection of critical asynchronous events — forest fires, border intrusion, volcanic eruptions, tsunamis, and disease progression — enabling real-time prediction and intelligent decision-making. Most recent work extends to cancer subtype identification and breast cancer detection using high-dimensional RNA expression data.</p>
+          <p>He has contributed to network security with novel encryption mechanisms exceeding AES performance (ten machine code instructions per byte, resilient to super-user insider attacks), resulting in five U.S. patents and a peer wireless security protocol comparable to the CCMP US standard.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="doc_images/forest_fire_2.png" alt="Forest fire emulation field experiment" class="research-img">
+          <p class="img-caption">Small-scale forest-fire emulation test bed — NMT field experiment</p>
+        </div>
+      </div>
+
+      <!-- Research Areas (interactive accordion) -->
+      <div class="row fade-in three" style="margin-top:16px;">
+        <div class="col-md-12">
+          <h3 class="section-header"><span class="glyphicon glyphicon-list-alt"></span>Active Research Areas</h3>
+          <div class="panel-group" id="research-accordion">
+
+            <div class="panel panel-default" style="border-radius:8px;margin-bottom:10px;">
+              <div class="panel-heading" style="border-radius:8px;background:#fff;cursor:pointer;" data-toggle="collapse" data-target="#r1">
+                <h4 class="panel-title" style="color:var(--navy);">
+                  <span class="glyphicon glyphicon-fire" style="color:var(--teal);margin-right:8px;"></span>
+                  Smart &amp; Secure Wireless Sensor Networks (SS-WSNs)
+                  <span class="pull-right glyphicon glyphicon-chevron-down" style="color:var(--muted);"></span>
+                </h4>
+              </div>
+              <div id="r1" class="collapse in">
+                <div class="panel-body" style="text-align:justify;">
+                  Development of smart and secure WSNs for very early prediction of asynchronous critical events — forest fire, border intrusion, tsunami, earthquake, volcanic activity, cancer development. Neural network models are integrated into sensor nodes for intelligent local decision-making, reducing communication overhead while improving detection accuracy. Field experiments with Mica-Z motes have validated the approach in realistic New Mexico outdoor conditions.
+                  <br><em style="font-size:.85em;color:var(--muted);">Funded by NSF CRI ($210,000) — 2007–2010</em>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default" style="border-radius:8px;margin-bottom:10px;">
+              <div class="panel-heading" style="border-radius:8px;background:#fff;cursor:pointer;" data-toggle="collapse" data-target="#r2">
+                <h4 class="panel-title" style="color:var(--navy);">
+                  <span class="glyphicon glyphicon-heart" style="color:var(--teal);margin-right:8px;"></span>
+                  Cancer Subtype Detection &amp; Healthcare ML
+                  <span class="pull-right glyphicon glyphicon-chevron-down" style="color:var(--muted);"></span>
+                </h4>
+              </div>
+              <div id="r2" class="collapse">
+                <div class="panel-body" style="text-align:justify;">
+                  Early detection and subtype identification of cancers (breast cancer, TCGA pan-cancer RNA expression) using machine learning. Recent work includes VGG16 transfer learning for breast cancer detection (2025), and a capacity-matched evaluation of K-means vs. Self-Organizing Maps for minority cancer subtype recovery on 10,095 samples across 19 cancer types (AI for Engineering, 2026). The latter introduced the stability–recovery–interpretability trade-off framework now applicable to high-dimensional imbalanced engineering datasets.
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default" style="border-radius:8px;margin-bottom:10px;">
+              <div class="panel-heading" style="border-radius:8px;background:#fff;cursor:pointer;" data-toggle="collapse" data-target="#r3">
+                <h4 class="panel-title" style="color:var(--navy);">
+                  <span class="glyphicon glyphicon-lock" style="color:var(--teal);margin-right:8px;"></span>
+                  Network Security &amp; Dynamic Encryption (5 US Patents)
+                  <span class="pull-right glyphicon glyphicon-chevron-down" style="color:var(--muted);"></span>
+                </h4>
+              </div>
+              <div id="r3" class="collapse">
+                <div class="panel-body" style="text-align:justify;">
+                  Novel synchronous dynamic encryption system that exceeds AES performance (ten machine code instructions per byte), resilient to super-user insider attacks. This work has yielded five U.S. patents and a peer wireless security protocol to the CCMP US standard. Recent extensions include cross-Atlantic security communication and secure cellphone applications, managed by NMT Research Foundation.
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default" style="border-radius:8px;margin-bottom:10px;">
+              <div class="panel-heading" style="border-radius:8px;background:#fff;cursor:pointer;" data-toggle="collapse" data-target="#r4">
+                <h4 class="panel-title" style="color:var(--navy);">
+                  <span class="glyphicon glyphicon-cloud" style="color:var(--teal);margin-right:8px;"></span>
+                  Cloud Computing &amp; Big Data Analytics
+                  <span class="pull-right glyphicon glyphicon-chevron-down" style="color:var(--muted);"></span>
+                </h4>
+              </div>
+              <div id="r4" class="collapse">
+                <div class="panel-body" style="text-align:justify;">
+                  Smart cloud computing manager using neural/fuzzy systems to monitor all activities and provide early anomaly warnings based on operational history. Experimental pilot model developed under NASA $25,000 grant (2012–2013). CloudFinder system for big data on volunteered federated clouds published in IEEE Transactions on Big Data (2017).
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default" style="border-radius:8px;margin-bottom:10px;">
+              <div class="panel-heading" style="border-radius:8px;background:#fff;cursor:pointer;" data-toggle="collapse" data-target="#r5">
+                <h4 class="panel-title" style="color:var(--navy);">
+                  <span class="glyphicon glyphicon-picture" style="color:var(--teal);margin-right:8px;"></span>
+                  Neural Networks for Image Compression
+                  <span class="pull-right glyphicon glyphicon-chevron-down" style="color:var(--muted);"></span>
+                </h4>
+              </div>
+              <div id="r5" class="collapse">
+                <div class="panel-body" style="text-align:justify;">
+                  Hybrid neural network model (ART/Kohonen) as an image compression engine that competes with the well-known Wavelet technology. Results published in the Applied Soft Computing journal and IEEE conference proceedings, and the model is patented with the USPTO. Satellite image compression using universal codebooks has also been explored.
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /panel-group -->
+        </div>
+      </div>
+
+      <!-- Research Labs -->
+      <div class="row fade-in four">
+        <div class="col-md-12">
+          <h3 class="section-header"><span class="glyphicon glyphicon-lamp"></span>Research Laboratories</h3>
+        </div>
+      </div>
+      <div class="row fade-in four">
+        <div class="col-sm-4" style="margin-bottom:16px;">
+          <div class="card" style="min-height:200px;">
+            <h4 style="color:var(--teal);">Smart &amp; Secure Sensor Lab</h4>
+            <p style="text-align:justify;">NSF-funded ($210,000 MRI grant) laboratory for developing intelligent and secure WSNs to detect asynchronous events — forest fire, volcanic eruption, border intrusion, seismic activity. Supports undergraduate, master's, and doctoral research with interdisciplinary collaborations.</p>
+          </div>
+        </div>
+        <div class="col-sm-4" style="margin-bottom:16px;">
+          <div class="card" style="min-height:200px;">
+            <h4 style="color:var(--teal);">Security Lab</h4>
+            <p style="text-align:justify;">Secures cyber and cellphone communication. Novel encryption algorithm exceeds AES and CCMP government standards. Most recent activity includes cross-Atlantic security communication and secure cellphone apps. Managed and supported by NMT Research Foundation.</p>
+          </div>
+        </div>
+        <div class="col-sm-4" style="margin-bottom:16px;">
+          <div class="card" style="min-height:200px;">
+            <h4 style="color:var(--teal);">Neural Networks Lab</h4>
+            <p style="text-align:justify;">Applies LVQ, BP, BAM, Hopfield, ART, KSOFM, and deep learning models to classification, pattern recognition, and analysis across healthcare, security, and environmental monitoring domains.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Field Experiments -->
+      <div class="row fade-in four">
+        <div class="col-md-12">
+          <h3 class="section-header"><span class="glyphicon glyphicon-camera"></span>Field Experiments</h3>
+        </div>
+      </div>
+      <div class="row fade-in four">
+        <div class="col-md-12" style="margin-bottom:12px;text-align:justify;">
+          <p>The Smart &amp; Secure Sensor Lab has conducted multiple outdoor field experiments in New Mexico to validate sensor-based event detection in realistic conditions, using Mica-Z motes in small-scale forest-fire emulation setups and border-intrusion detection trials.</p>
+        </div>
+        <div class="col-sm-6" style="margin-bottom:16px;">
+          <img src="doc_images/forest_fire_1.png" alt="Forest fire emulation and border intrusion detection experiments" class="research-img">
+          <p class="img-caption">Mica-Z mote, small-scale forest-fire emulation, and border-intrusion detection field trials</p>
+        </div>
+        <div class="col-sm-6" style="margin-bottom:16px;">
+          <img src="doc_images/forest_fire_2.png" alt="Igniting the forest fire emulation test bed" class="research-img">
+          <p class="img-caption">Igniting the small-scale forest-fire emulation test bed with sensor mote deployment</p>
+        </div>
+      </div>
+
+      <!-- Collaborators -->
+      <div class="row fade-in four">
+        <div class="col-md-12">
+          <h3 class="section-header"><span class="glyphicon glyphicon-link"></span>Collaborators &amp; Funding Agencies</h3>
+          <div style="background:#fff;border-radius:8px;padding:18px 22px;box-shadow:0 1px 5px rgba(0,0,0,.07);">
+            <div class="row text-center">
+              <div class="col-xs-6 col-sm-3" style="margin-bottom:10px;"><strong>NSF</strong><br><small class="text-muted">National Science Foundation</small></div>
+              <div class="col-xs-6 col-sm-3" style="margin-bottom:10px;"><strong>NASA / NMSGC</strong><br><small class="text-muted">Space Grant Consortium</small></div>
+              <div class="col-xs-6 col-sm-3" style="margin-bottom:10px;"><strong>Sandia National Labs</strong><br><small class="text-muted">Albuquerque, NM</small></div>
+              <div class="col-xs-6 col-sm-3" style="margin-bottom:10px;"><strong>LANL</strong><br><small class="text-muted">Los Alamos National Lab</small></div>
+              <div class="col-xs-6 col-sm-3" style="margin-bottom:10px;"><strong>U.S. Dept. of Defense</strong><br><small class="text-muted">Information Assurance</small></div>
+              <div class="col-xs-6 col-sm-3" style="margin-bottom:10px;"><strong>NMT Res. Foundation</strong><br><small class="text-muted">Presidential &amp; Parke Grants</small></div>
+              <div class="col-xs-6 col-sm-3" style="margin-bottom:10px;"><strong>KFUPM</strong><br><small class="text-muted">King Fahd Univ., Saudi Arabia</small></div>
+              <div class="col-xs-6 col-sm-3" style="margin-bottom:10px;"><strong>International Universities</strong><br><small class="text-muted">Algeria, Tunisia, others</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Selected Past Grants table -->
+      <div class="row fade-in four" style="margin-top:10px;">
+        <div class="col-md-12">
+          <h3 class="section-header"><span class="glyphicon glyphicon-usd"></span>Selected Grants Summary</h3>
+          <table class="table table-hover" style="background:#fff;border-radius:8px;">
+            <thead><tr style="background:var(--navy);color:#fff;"><th>Project</th><th>Agency</th><th style="text-align:right;">Amount</th><th>Period</th><th>Role</th></tr></thead>
+            <tbody>
+              <tr><td>Experimental Network of Sensors Lab (SS-WSN)</td><td>NSF CRI</td><td style="text-align:right;color:var(--teal);font-weight:700;">$210,000</td><td>2007–2010</td><td>PI</td></tr>
+              <tr><td>Information Assurance Scholarship Program</td><td>U.S. DoD</td><td style="text-align:right;color:var(--teal);font-weight:700;">$156,906</td><td>2002–2003</td><td>Co-PI</td></tr>
+              <tr><td>Image Compression &amp; Network Security</td><td>NMT / Presidential</td><td style="text-align:right;color:var(--teal);font-weight:700;">$170,000+</td><td>Ongoing</td><td>PI</td></tr>
+              <tr><td>Equipment for Computer Networks Lab</td><td>NSF ILI</td><td style="text-align:right;color:var(--teal);font-weight:700;">$48,674</td><td>1992–1995</td><td>PI</td></tr>
+              <tr><td>Volunteer Cloud Federation (Big Data)</td><td>NASA/NMSGC</td><td style="text-align:right;color:var(--teal);font-weight:700;">$25,000</td><td>2012–2013</td><td>Co-PI</td></tr>
+              <tr><td>BIG DATA + Sensors for Healthcare</td><td>NASA/NMSGC</td><td style="text-align:right;color:var(--teal);font-weight:700;">$24,999</td><td>2014–2016</td><td>PI</td></tr>
+              <tr><td>Task-Grain VHLL for Data-Driven Multiprocessing</td><td>Sandia National Labs</td><td style="text-align:right;color:var(--teal);font-weight:700;">$60,000</td><td>1991–1993</td><td>PI</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="https://www.cs.nmt.edu/" target="_blank">Dept. of CSE, NMT</a>
+        <a href="http://www.nmt.edu/" target="_blank"><img src="nmt_logo.jpg" alt="New Mexico Tech" style="height:34px;"></a>
+        <span>Copyright &copy; Hamdy Soliman, 2026</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<a id="back-to-top" href="#" class="btn" role="button"><span class="glyphicon glyphicon-chevron-up"></span></a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(window).scroll(function(){ $('#back-to-top').toggle($(this).scrollTop()>200); });
+$('#back-to-top').click(function(){ $('html,body').animate({scrollTop:0},400); return false; });
+// Toggle chevron on accordion
+$('.panel-heading').on('click',function(){
+  var icon=$(this).find('.glyphicon-chevron-down,.glyphicon-chevron-up');
+  var isOpen=$(this).next('.collapse').hasClass('in');
+  icon.toggleClass('glyphicon-chevron-down',isOpen).toggleClass('glyphicon-chevron-up',!isOpen);
+});
+</script>
+</body>
+</html>

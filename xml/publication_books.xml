@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allbooks>
+
+    <!-- ===== BOOK CHAPTERS ===== -->
+
+    <book id="1">
+        <name>SDN Helps Big Data Become Fault Tolerant</name>
+        <uri>#</uri>
+        <authors>Abdelmounaam Rezgui, Amir Mirzaeinia, Hamdy Soliman</authors>
+        <publisher>IET Book Series on Big Data</publisher>
+        <publication_details>Chapter 17 - In Big Data and Software Defined Networks, IET Book Series on Big Data</publication_details>
+        <year_of_publication>2017</year_of_publication>
+        <keyword_primary>Big Data, SDN, Fault Tolerance</keyword_primary>
+        <keyword_secondary> </keyword_secondary>
+    </book>
+
+    <!-- ===== eBook: Intelligent Systems and Applications ===== -->
+    <!-- eBook ISBN: 978-3-031-47715-7 | Print ISBN: 978-3-031-47714-0 -->
+
+    <book id="2">
+        <name>Wireless Sensor Networks Anomaly Detection Using Machine Learning: A Survey</name>
+        <uri>#</uri>
+        <authors>Ahshanul Haque, Naseef-Ur-Rahman Chowdhury, Hamdy Soliman, Mohammad Sahinur Hossen, Tanjim Fatima, Imtiaz Ahmed</authors>
+        <publisher>Springer</publisher>
+        <publication_details>eBook: Intelligent Systems and Applications, Pages 491-506, First Published: 30 January 2024</publication_details>
+        <year_of_publication>2024</year_of_publication>
+        <keyword_primary>Wireless Sensor Networks, Anomaly Detection, Machine Learning</keyword_primary>
+        <keyword_secondary> </keyword_secondary>
+    </book>
+
+    <book id="3">
+        <name>Android Malware Detection Using Machine Learning: A Review</name>
+        <uri>#</uri>
+        <authors>Naseef-Ur-Rahman Chowdhury, Ahshanul Haque, Hamdy Soliman, Mohammad Sahinur Hossen, Tanjim Fatima, Imtiaz Ahmed</authors>
+        <publisher>Springer</publisher>
+        <publication_details>eBook: Intelligent Systems and Applications, Pages 507-522, First Published: 30 January 2024</publication_details>
+        <year_of_publication>2024</year_of_publication>
+        <keyword_primary>Android Malware, Machine Learning, Security</keyword_primary>
+        <keyword_secondary> </keyword_secondary>
+    </book>
+
+    <!-- ===== Springer LNNS Series (FICC 2025) ===== -->
+
+    <book id="4">
+        <name>A Smart and Secure Wireless Sensor Network for Early Forest Fire Prediction: An Emulated Scenario Approach</name>
+        <uri>#</uri>
+        <authors>Hamdy Soliman, Ahshanul Haque</authors>
+        <publisher>Springer - Lecture Notes in Networks and Systems</publisher>
+        <publication_details>Proceedings of the Future of Information and Communication Conference (FICC 2025), Berlin, Germany, 28-29 April 2025, First Online: 05 March 2025, Pages 719-731</publication_details>
+        <year_of_publication>2025</year_of_publication>
+        <keyword_primary>Wireless Sensor Networks, Forest Fire Prediction, Smart Systems</keyword_primary>
+        <keyword_secondary> </keyword_secondary>
+    </book>
+
+</allbooks>

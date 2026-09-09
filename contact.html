@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Dr. Hamdy Soliman</title>
+  <link rel="shortcut icon" href="doc_images/_head.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    .contact-card { background:#fff; border-radius:8px; padding:24px; box-shadow:0 2px 8px rgba(0,0,0,.08); margin-bottom:20px; }
+    .contact-card .glyphicon { color:var(--teal); margin-right:10px; }
+    .contact-row { padding:10px 0; border-bottom:1px solid var(--border); display:flex; align-items:flex-start; gap:12px; }
+    .contact-row:last-child { border-bottom:none; }
+    .contact-label { font-weight:700; color:var(--navy); min-width:80px; }
+    .contact-value { color:var(--text); }
+    .map-container { border-radius:8px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,.12); margin-bottom:20px; }
+    .hours-table td { padding:8px 12px; }
+    .hours-table tr:nth-child(odd) { background:#f9f9f9; }
+    .info-box { background:linear-gradient(135deg,#eaf7f3,#f0f9f6); border:1px solid var(--teal); border-radius:8px; padding:18px 22px; margin-bottom:20px; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-custome navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-main">
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <span class="glyphicon glyphicon-home glyphicon_extra_padding"></span>Dr. Hamdy <strong>Soliman</strong>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="nav-main">
+      <ul class="nav navbar-nav">
+        <li><a href="publications.html"><span class="glyphicon glyphicon-pencil glyphicon_extra_padding"></span>Publications</a></li>
+        <li><a href="research.html"><span class="glyphicon glyphicon-grain glyphicon_extra_padding"></span>Research</a></li>
+        <li><a href="courses.html"><span class="glyphicon glyphicon-blackboard glyphicon_extra_padding"></span>Courses</a></li>
+        <li><a href="students.html"><span class="glyphicon glyphicon-user glyphicon_extra_padding"></span>Students</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="contact.html"><span class="glyphicon glyphicon-envelope glyphicon_extra_padding"></span>Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+      <div class="row fade-in one">
+        <div class="col-lg-12">
+          <h1 class="page-header text-right">Contact</h1>
+        </div>
+      </div>
+
+      <!-- Info box -->
+      <div class="info-box fade-in two">
+        <span class="glyphicon glyphicon-info-sign" style="color:var(--teal);margin-right:8px;"></span>
+        <strong>Walk-ins welcome</strong> anytime except class hours. You may also schedule an appointment by email or simply walk in to the office.
+      </div>
+
+      <div class="row fade-in two">
+
+        <!-- Contact details -->
+        <div class="col-md-5">
+          <div class="contact-card">
+            <h4 style="color:var(--navy);margin-bottom:16px;">
+              <span class="glyphicon glyphicon-map-marker"></span>Office Information
+            </h4>
+
+            <div class="contact-row">
+              <span class="contact-label">Name</span>
+              <span class="contact-value">Dr. Hamdy S. Soliman</span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">Title</span>
+              <span class="contact-value">Professor, Computer Science &amp; Engineering</span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">Office</span>
+              <span class="contact-value">Cramer Hall 211C (inside 214)<br>
+                <small style="color:var(--muted);">801 Leroy Pl, Socorro, NM 87801</small>
+              </span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">
+                <a href="tel:+15758355170">+1 (575) 835-5170</a>
+              </span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">
+                <a href="mailto:hss@nmt.edu">hss@nmt.edu</a><br>
+                <a href="mailto:hamdy.soliman@nmt.edu">hamdy.soliman@nmt.edu</a>
+              </span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">Department</span>
+              <span class="contact-value">
+                <a href="https://www.cs.nmt.edu/" target="_blank">Dept. of Computer Science &amp; Engineering</a><br>
+                <a href="http://www.nmt.edu/" target="_blank">New Mexico Institute of Mining and Technology</a>
+              </span>
+            </div>
+          </div>
+
+          <!-- Quick links -->
+          <div class="contact-card">
+            <h4 style="color:var(--navy);margin-bottom:14px;">
+              <span class="glyphicon glyphicon-link"></span>Online Profiles
+            </h4>
+            <p>
+              <a href="https://scholar.google.com/citations?user=3aSBCKQAAAAJ&hl=en" target="_blank" class="btn btn-default btn-block" style="margin-bottom:8px;text-align:left;">
+                <span class="glyphicon glyphicon-new-window" style="margin-right:8px;"></span>Google Scholar
+              </a>
+              <a href="https://www.cs.nmt.edu/" target="_blank" class="btn btn-default btn-block" style="margin-bottom:8px;text-align:left;">
+                <span class="glyphicon glyphicon-education" style="margin-right:8px;"></span>NMT CSE Department
+              </a>
+              <a href="mailto:hss@nmt.edu" class="btn btn-default btn-block" style="text-align:left;">
+                <span class="glyphicon glyphicon-envelope" style="margin-right:8px;color:var(--teal);"></span>Send Email
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Map + office hours -->
+        <div class="col-md-7">
+
+          <!-- Google Map -->
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9!2d-106.905184!3d34.066807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d0e4b6b6b6b6b7%3A0x0!2sCramer+Hall%2C+New+Mexico+Tech!5e0!3m2!1sen!2sus!4v1234567890"
+              width="100%" height="380" style="border:0;display:block;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <!-- Office hours -->
+          <div class="contact-card">
+            <h4 style="color:var(--navy);margin-bottom:14px;">
+              <span class="glyphicon glyphicon-time"></span>Office Hours
+            </h4>
+            <table class="table hours-table" style="margin-bottom:0;">
+              <tbody>
+                <tr>
+                  <td style="font-weight:600;">Monday</td>
+                  <td>By appointment or walk-in (outside class hours)</td>
+                </tr>
+                <tr>
+                  <td style="font-weight:600;">Tuesday</td>
+                  <td>By appointment or walk-in (outside class hours)</td>
+                </tr>
+                <tr>
+                  <td style="font-weight:600;">Wednesday</td>
+                  <td>By appointment or walk-in (outside class hours)</td>
+                </tr>
+                <tr>
+                  <td style="font-weight:600;">Thursday</td>
+                  <td>By appointment or walk-in (outside class hours)</td>
+                </tr>
+                <tr>
+                  <td style="font-weight:600;">Friday</td>
+                  <td>By appointment or walk-in (outside class hours)</td>
+                </tr>
+              </tbody>
+            </table>
+            <p style="margin-top:10px;font-size:.85em;color:var(--muted);">
+              <span class="glyphicon glyphicon-info-sign"></span>
+              For current semester office hours, please check the course syllabus or contact by email.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="https://www.cs.nmt.edu/" target="_blank">Dept. of CSE, NMT</a>
+        <a href="http://www.nmt.edu/" target="_blank">
+          <img src="doc_images/nmt_logo.png" alt="New Mexico Tech" style="height:34px;">
+        </a>
+        <span>Copyright &copy; Hamdy Soliman, 2026</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<a id="back-to-top" href="#" class="btn" role="button">
+  <span class="glyphicon glyphicon-chevron-up"></span>
+</a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(window).scroll(function(){ $('#back-to-top').toggle($(this).scrollTop() > 200); });
+$('#back-to-top').click(function(){ $('html,body').animate({scrollTop:0},400); return false; });
+</script>
+</body>
+</html>

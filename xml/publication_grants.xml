@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allgrants>
+
+    <grant id="1">
+        <title>Experimental Network of Sensors Lab for advancing research in sensor-data collection, integration, management, and analysis</title>
+        <agency>National Science Foundation (NSF) — Computing Research Infrastructure (CRI)</agency>
+        <amount>$210,000 (+ $50,000 matching fund)</amount>
+        <period>2007–2010</period>
+        <role>Principal Investigator</role>
+        <description>With Drs. Liebrock, Mazumdar, Shin, and Mukkamala, Computer Science Department.</description>
+    </grant>
+
+    <grant id="2">
+        <title>Equipment for a Computer Networks Laboratory</title>
+        <agency>National Science Foundation (NSF) — Instrumentation and Laboratory Improvement Program</agency>
+        <amount>$48,674</amount>
+        <period>1992–1995</period>
+        <role>Principal Investigator</role>
+        <description>With Dr. George A. Cunningham, III.</description>
+    </grant>
+
+    <grant id="3">
+        <title>A Task-Grain Very High Level Language for Data-Driven Multiprocessing System</title>
+        <agency>Sandia National Laboratories</agency>
+        <amount>$30,000</amount>
+        <period>1991–1992</period>
+        <role>Principal Investigator</role>
+        <description></description>
+    </grant>
+
+    <grant id="4">
+        <title>A Task-Grain Very High Level Language for Data-Driven Multiprocessing System (Renewal)</title>
+        <agency>Sandia National Laboratories</agency>
+        <amount>$30,000</amount>
+        <period>1992–1993</period>
+        <role>Principal Investigator</role>
+        <description></description>
+    </grant>
+
+    <grant id="5">
+        <title>Volunteer Cloud Federation to Enable Data- and Compute-Intensive Scientific Applications</title>
+        <agency>NASA / New Mexico Space Grant Consortium (NMSGC)</agency>
+        <amount>$25,000</amount>
+        <period>2012–2013</period>
+        <role>Co-Principal Investigator</role>
+        <description>PI: Dr. Abdelmounaam Rezgui.</description>
+    </grant>
+
+    <grant id="6">
+        <title>Combining BIG DATA with Sensor Networks for Healthcare: Early Detection of Chronic Diseases</title>
+        <agency>NASA / New Mexico Space Grant Consortium (NMSGC)</agency>
+        <amount>$24,999</amount>
+        <period>2014–2016</period>
+        <role>Principal Investigator</role>
+        <description></description>
+    </grant>
+
+    <grant id="7">
+        <title>Information Assurance Scholarship Program Capacity Building Grant</title>
+        <agency>U.S. Department of Defense</agency>
+        <amount>$156,906</amount>
+        <period>2002–2003</period>
+        <role>Co-Principal Investigator</role>
+        <description>PI: Dr. Sung.</description>
+    </grant>
+
+    <grant id="8">
+        <title>Image Compression and Network Security</title>
+        <agency>NMT Office of the President / NMT Research Foundation / Parke Grants</agency>
+        <amount>$170,000+ (+ undisclosed Presidential amount)</amount>
+        <period>Ongoing</period>
+        <role>Principal Investigator</role>
+        <description>Presidential and NMT Research Foundation grants for image compression and network security research.</description>
+    </grant>
+
+    <grant id="9">
+        <title>Research Student Support for Patent Development Combining Sensor Systems, Machine Learning, and Security</title>
+        <agency>NMT Research Park (formerly NMT Research Foundation), via NMT President's Office</agency>
+        <amount>Undisclosed</amount>
+        <period>Ongoing</period>
+        <role>Principal Investigator</role>
+        <description>Funding to support research students working on development and advancement of filed and ongoing patents integrating sensor technologies, machine learning, and security systems.</description>
+    </grant>
+
+    <grant id="10">
+        <title>Advances in Machine Learning Methods: Methodologies for a Data Science Approach to Applications of Genetics</title>
+        <agency>Los Alamos National Laboratory (LANL)</agency>
+        <amount>$91,944</amount>
+        <period>Not Specified</period>
+        <role>Co-Principal Investigator</role>
+        <description>PI: Dr. Mazumdar. Research focused on advancing machine learning methodologies within a data science framework applied to genetics-based applications.</description>
+    </grant>
+
+</allgrants>

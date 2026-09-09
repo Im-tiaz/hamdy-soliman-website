@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="doc_images/_head.png"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses — Dr. Hamdy Soliman</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    .rating-bar{display:inline-block;background:var(--teal);height:10px;border-radius:5px;vertical-align:middle;margin-right:8px;}
+    .rating-label{font-size:.82em;color:var(--muted);}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-custome navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-main">
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home glyphicon_extra_padding"></span>Dr. Hamdy <strong>Soliman</strong></a>
+    </div>
+    <div class="collapse navbar-collapse" id="nav-main">
+      <ul class="nav navbar-nav">
+        <li><a href="publications.html"><span class="glyphicon glyphicon-pencil glyphicon_extra_padding"></span>Publications</a></li>
+        <li><a href="research.html"><span class="glyphicon glyphicon-grain glyphicon_extra_padding"></span>Research</a></li>
+        <li class="active"><a href="courses.html"><span class="glyphicon glyphicon-blackboard glyphicon_extra_padding"></span>Courses</a></li>
+        <li><a href="students.html"><span class="glyphicon glyphicon-user glyphicon_extra_padding"></span>Students</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="contact.html"><span class="glyphicon glyphicon-envelope glyphicon_extra_padding"></span>Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row"><div class="col-md-10 col-md-offset-1">
+
+    <div class="row fade-in one"><div class="col-lg-12">
+      <h1 class="page-header text-right">Courses <small>Teaching &amp; Developed</small></h1>
+    </div></div>
+
+    <!-- Student evaluation scores -->
+    <div class="fade-in two" style="background:#fff;border-radius:8px;padding:18px 22px;box-shadow:0 1px 5px rgba(0,0,0,.07);margin-bottom:20px;">
+      <h4 style="color:var(--navy);margin-bottom:14px;"><span class="glyphicon glyphicon-star" style="color:var(--teal);margin-right:8px;"></span>Student Evaluation Scores (Overall)</h4>
+      <div style="margin-bottom:10px;">
+        <span style="font-weight:600;width:220px;display:inline-block;">Graduate (CSE 5XX):</span>
+        <span class="rating-bar" style="width:85px;"></span>
+        <strong style="color:var(--teal);">4.34</strong> <span class="rating-label">/ 5.0</span>
+      </div>
+      <div style="margin-bottom:10px;">
+        <span style="font-weight:600;width:220px;display:inline-block;">Senior Undergraduate (CSE 3/4XX):</span>
+        <span class="rating-bar" style="width:79px;"></span>
+        <strong style="color:var(--teal);">3.96</strong> <span class="rating-label">/ 5.0</span>
+      </div>
+      <div>
+        <span style="font-weight:600;width:220px;display:inline-block;">Freshman/Sophomore (CSE 1XX):</span>
+        <span class="rating-bar" style="width:69px;"></span>
+        <strong style="color:var(--teal);">3.43</strong> <span class="rating-label">/ 5.0</span>
+      </div>
+    </div>
+
+    <!-- Currently teaching -->
+    <h3 class="section-header fade-in two"><span class="glyphicon glyphicon-play-circle"></span>Currently Teaching</h3>
+    <div class="fade-in three">
+      <table class="table" style="background:#fff;border-radius:8px;">
+        <thead><tr style="background:var(--navy);color:#fff;"><th style="width:160px;">Course</th><th>Title</th></tr></thead>
+        <tbody>
+          <tr><td><a data-toggle="collapse" href="#c1" style="font-weight:700;">CSE 3024</a></td><td><a data-toggle="collapse" href="#c1">Principles of Programming Languages</a><span class="badge_spring">Spring</span><span class="badge_underGrad">UG</span><div id="c1" class="collapse"><small style="color:#555;"><em>Prereq:</em> CSE 1022 (C or higher), Co-req: CSE 2013<br>Syntax and semantics of HLLs; data types; control structures; concurrency; procedural and data abstraction; imperative, OO, functional and logic paradigms. Examples from Ada, Lisp, Smalltalk, Prolog.</small></div></td></tr>
+          <tr><td><a data-toggle="collapse" href="#c2" style="font-weight:700;">CSE/IT 3053</a></td><td><a data-toggle="collapse" href="#c2">Introduction to Computer Networks</a><span class="badge_fall">Fall</span><span class="badge_underGrad">UG</span><div id="c2" class="collapse"><small style="color:#555;"><em>Prereq:</em> CSE 222 (C or higher)<br>ISO/OSI protocol stack; LAN, MAN, WAN; physical layer; data link layer; MAC protocols; IEEE 802.11; IP routing; TCP/IP; network security; DNS, Email.</small></div></td></tr>
+          <tr><td><a data-toggle="collapse" href="#c3" style="font-weight:700;">CSE 4052</a></td><td><a data-toggle="collapse" href="#c3">Introduction to Sensor Networks</a><span class="badge_spring">Spring</span><span class="badge_underGrad">UG</span><div id="c3" class="collapse"><small style="color:#555;"><em>Prereq:</em> CSE 3025 and CSE 3053<br>WSN protocols, applications, topologies, deployment, data manipulation, mobile ad-hoc wireless communication, security. Recent research developments.</small></div></td></tr>
+          <tr><td><a data-toggle="collapse" href="#c4" style="font-weight:700;">CSE 4064</a></td><td><a data-toggle="collapse" href="#c4">Intro to Soft Computing</a><span class="badge_fall">Fall</span><span class="badge_underGrad">UG</span><div id="c4" class="collapse"><small style="color:#555;"><em>Prereq:</em> MATH 2420, 3082; CSE 3044 (C or higher)<br>Major ANN types; fuzzy logic theory; genetic algorithms; evolutionary computing; intelligent engineering applications.</small></div></td></tr>
+          <tr><td><a data-toggle="collapse" href="#c5" style="font-weight:700;">CSE 4065</a></td><td><a data-toggle="collapse" href="#c5">Intro Neural Networks Applications</a><span class="badge_spring">Spring</span><span class="badge_underGrad">UG</span><div id="c5" class="collapse"><small style="color:#555;"><em>Prereq:</em> CSE 2013, 2022 (C or higher)<br>Biological neurons and modeling; perceptron; backpropagation; Hopfield model; Kohonen SOFM; LVQ; ART model. ANN application projects.</small></div></td></tr>
+          <tr><td><a data-toggle="collapse" href="#c6" style="font-weight:700;">CSE 4089</a></td><td><a data-toggle="collapse" href="#c6">Smart &amp; Secure Sensory Systems</a><span class="badge_spring">Spring</span><span class="badge_underGrad">UG</span><div id="c6" class="collapse"><small style="color:#555;"><em>Prereq:</em> MATH 2420, 3082; or CSE 3044<br>Design of SS-WSNs toward IoT. WSN technology, protocols, neural network modeling, WSN security, critical military and civil applications.</small></div></td></tr>
+          <tr><td><a data-toggle="collapse" href="#c7" style="font-weight:700;">CSE 5067</a></td><td><a data-toggle="collapse" href="#c7">Soft Computing</a><span class="badge_fall">Fall</span><span class="badge_grad">Grad</span><div id="c7" class="collapse"><small style="color:#555;"><em>Prereq:</em> MATH 2420, 3082; CSE 3044 (C or higher)<br>Multilayer feedback networks; self-organizing networks; Hopfield networks; learning algorithms; fuzzy systems; evolutionary computing; engineering applications.</small></div></td></tr>
+          <tr><td><a data-toggle="collapse" href="#c8" style="font-weight:700;">CSE 5089</a></td><td><a data-toggle="collapse" href="#c8">Neural Networks</a><span class="badge_spring">Spring</span><span class="badge_grad">Grad</span><div id="c8" class="collapse"><small style="color:#555;"><em>Prereq:</em> CSE 207 or CSE 3044 (C or better); MATH 2420, 382<br>Biological neuron models; single/multilayer ANN; backpropagation; Hopfield; SOFM; LVQ; counterpropagation; ART. Graduate-level depth and rigor.</small></div></td></tr>
+          <tr><td><a data-toggle="collapse" href="#c9" style="font-weight:700;">CSE 5089</a></td><td><a data-toggle="collapse" href="#c9">Advances in Sensor Networks</a><span class="badge_spring">Spring</span><span class="badge_grad">Grad</span><div id="c9" class="collapse"><small style="color:#555;"><em>Prereq:</em> Two semesters of upper division CS + consent of instructor<br>Advanced WSN topics; protocols; mobile ad-hoc; security; student literature presentations on latest research.</small></div></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Courses developed -->
+    <h3 class="section-header fade-in three" style="margin-top:16px;"><span class="glyphicon glyphicon-plus-sign"></span>Courses Developed by Dr. Soliman</h3>
+    <div class="fade-in four" style="background:#fff;border-radius:8px;padding:14px 18px;box-shadow:0 1px 5px rgba(0,0,0,.07);">
+      <div class="row">
+        <div class="col-sm-6">
+          <p><strong>Undergraduate (6 courses developed)</strong></p>
+          <ul>
+            <li>CSE/IT 453 — Computer Networks &amp; the Internet</li>
+            <li>CSE 4052 — Introduction to Sensor Networks</li>
+            <li>CSE 4064 — Introduction to Soft Computing</li>
+            <li>CSE 4065 — Intro to Neural Networks Applications</li>
+            <li>CSE 4089 — Smart &amp; Secure Sensory Systems</li>
+            <li>CSE 454 — Computer Graphics</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <p><strong>Graduate (11 courses developed)</strong></p>
+          <ul>
+            <li>CSE 5067 — Soft Computing</li>
+            <li>CSE 5089 — Neural Networks</li>
+            <li>CSE 5089 — Advances in Sensor Networks</li>
+            <li>CSE 589 — Advanced Topics in Computer Networks</li>
+            <li>CSE 589 — Modeling &amp; Simulation of Computer Networks</li>
+            <li>CSE 589 — Wireless Security and Performance Analysis</li>
+            <li>CSE 589 — Internet Security and Performance Analysis</li>
+            <li>CSE 589 — Wireless Sensor Networks: Routing and Security</li>
+            <li>CSE 589 — Topics in Modeling and Simulation</li>
+            <li>CSE 589 — Advanced Topics in Operating Systems</li>
+            <li>CSE 565 — Neural Networks (original version)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Teaching highlights -->
+    <h3 class="section-header fade-in four" style="margin-top:16px;"><span class="glyphicon glyphicon-tint"></span>Teaching Highlights</h3>
+    <div class="fade-in four" style="background:#fff;border-radius:8px;padding:14px 18px;box-shadow:0 1px 5px rgba(0,0,0,.07);">
+      <ul>
+        <li>Developed 6 undergraduate and 11 graduate classes — first to introduce <strong>Neural Networks</strong> and <strong>Sensor Networks</strong> at NMT.</li>
+        <li>Introduced <strong>Computer Networking</strong> at both undergraduate and graduate levels (six courses) in the CSE Department.</li>
+        <li>Refined and taught <strong>Principles of Programming Languages</strong> for over 20 years.</li>
+        <li>Helped form the <strong>Information Technology specialization</strong> at NMT, including IT networking classes.</li>
+        <li>Also taught: Advanced Computer Networks, Advanced Operating Systems, Computer Graphics, Graduate Seminar, and multiple Special Topics courses.</li>
+      </ul>
+    </div>
+
+  </div></div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="https://www.cs.nmt.edu/" target="_blank">Dept. of CSE, NMT</a>
+        <a href="http://www.nmt.edu/" target="_blank"><img src="nmt_logo.jpg" alt="New Mexico Tech" style="height:34px;"></a>
+        <span>Copyright &copy; Hamdy Soliman, 2026</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<a id="back-to-top" href="#" class="btn" role="button"><span class="glyphicon glyphicon-chevron-up"></span></a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(window).scroll(function(){ $('#back-to-top').toggle($(this).scrollTop()>200); });
+$('#back-to-top').click(function(){ $('html,body').animate({scrollTop:0},400); return false; });
+</script>
+</body>
+</html>
