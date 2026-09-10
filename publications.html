@@ -62,8 +62,8 @@
 
       <!-- Summary stats -->
       <div class="row fade-in two text-center" style="margin-bottom:16px;">
-        <div class="col-xs-4"><div class="stat-box"><span class="stat-num">59</span><div class="stat-label">Journals</div></div></div>
-        <div class="col-xs-4"><div class="stat-box"><span class="stat-num">102</span><div class="stat-label">Conferences</div></div></div>
+        <div class="col-xs-4"><div class="stat-box"><span class="stat-num">27</span><div class="stat-label">Journals</div></div></div>
+        <div class="col-xs-4"><div class="stat-box"><span class="stat-num">66</span><div class="stat-label">Conferences</div></div></div>
         <div class="col-xs-4"><div class="stat-box"><span class="stat-num">5</span><div class="stat-label">US Patents</div></div></div>
       </div>
 
@@ -112,13 +112,13 @@
 
       <!-- JOURNALS -->
       <section class="fade-in three" id="section-journal">
-        <h3 class="section-header"><span class="glyphicon glyphicon-open-file"></span>Peer-Reviewed Journals <span style="font-size:.7em;font-weight:400;color:#bdc3c7;">(59 articles)</span></h3>
+        <h3 class="section-header"><span class="glyphicon glyphicon-open-file"></span>Peer-Reviewed Journals <span style="font-size:.7em;font-weight:400;color:#bdc3c7;">(27 articles)</span></h3>
         <div id="journal_section"><p class="text-muted">Loading…</p></div>
       </section>
 
       <!-- CONFERENCES -->
       <section class="fade-in three" id="section-conference">
-        <h3 class="section-header"><span class="glyphicon glyphicon-plane"></span>Conference Papers <span style="font-size:.7em;font-weight:400;color:#bdc3c7;">(102 papers)</span></h3>
+        <h3 class="section-header"><span class="glyphicon glyphicon-plane"></span>Conference Papers <span style="font-size:.7em;font-weight:400;color:#bdc3c7;">(66 papers)</span></h3>
         <div id="conference_section"><p class="text-muted">Loading…</p></div>
       </section>
 
@@ -197,11 +197,7 @@ fetch('xml/publication_journal.xml').then(r=>r.text()).then(str=>{
   var extras=[
     {title:'Quantifying the Stability–Recovery–Interpretability Trade-Off Between K-Means and Self-Organizing Maps for High-Dimensional Imbalanced Data',uri:'https://www.mdpi.com/3042-8831/1/2/10',authors:'Imtiaz Ahmed, Hamdy Soliman',publisher:'AI for Engineering (MDPI)',details:'Vol. 1, Issue 2, Article 10. DOI: 10.3390/aieng1020010',year:'Aug 2026',isnew:true},
     {title:'Multi-Agent Edge AI for Coordinated Event Prediction over Multi-Layer Wireless Sensor Networks: A Smart Competitive Approach',uri:'https://doi.org/10.3390/electronics15153331',authors:'Haque, A.; Soliman, H.',publisher:'Electronics (MDPI)',details:'Vol. 15(15), 3331',year:'Jul 2026'},
-    {title:'Edge-Level Forest Fire Prediction with Selective Communication in Hierarchical Wireless Sensor Networks',uri:'https://doi.org/10.3390/electronics15040881',authors:'Haque, A.; Soliman, H.',publisher:'Electronics (MDPI)',details:'Vol. 15(4), 881',year:'2026'},
-    {title:'A Transformer-Based Autoencoder with Isolation Forest and XGBoost for Malfunction and Intrusion Detection in WSNs for Forest Fire Prediction',uri:'https://doi.org/10.3390/fi17040164',authors:'Ahshanul Haque, Hamdy Soliman',publisher:'MDPI Future Internet',details:'Vol. 17, Issue 4, 164',year:'2025'},
-    {title:'Application of VGG16 Transfer Learning for Breast Cancer Detection',uri:'https://doi.org/10.3390/info16030227',authors:'Tanjim Fatima, Hamdy Soliman',publisher:'MDPI Information',details:'Vol. 16, Issue 3, 227',year:'Mar 2025'},
-    {title:'Hierarchical Early Wireless Forest Fire Prediction System Utilizing Virtual Sensors',uri:'https://doi.org/10.3390/electronics14081634',authors:'A. Haque, H. Soliman',publisher:'MDPI Electronics',details:'Vol. 14(8), 1634',year:'2025'},
-    {title:'Smart Wireless Sensor Networks with Virtual Sensors for Forest Fire Evolution Prediction Using Machine Learning',uri:'https://doi.org/10.3390/electronics14020223',authors:'A. Haque, H. Soliman',publisher:'MDPI Electronics',details:'Vol. 14(2), 223',year:'2025'},
+    {title:'Edge-Level Forest Fire Prediction with Selective Communication in Hierarchical Wireless Sensor Networks',uri:'https://doi.org/10.3390/electronics15040881',authors:'Haque, A.; Soliman, H.',publisher:'Electronics (MDPI)',details:'Vol. 15(4), 881',year:'2026'}
   ];
   var idx=1;
   for(var e=0;e<extras.length;e++){
