@@ -62,7 +62,7 @@
 
       <!-- Summary stats -->
       <div class="row fade-in two text-center" style="margin-bottom:16px;">
-        <div class="col-xs-4"><div class="stat-box"><span class="stat-num">27</span><div class="stat-label">Journals</div></div></div>
+        <div class="col-xs-4"><div class="stat-box"><span class="stat-num">28</span><div class="stat-label">Journals</div></div></div>
         <div class="col-xs-4"><div class="stat-box"><span class="stat-num">66</span><div class="stat-label">Conferences</div></div></div>
         <div class="col-xs-4"><div class="stat-box"><span class="stat-num">5</span><div class="stat-label">US Patents</div></div></div>
       </div>
@@ -83,6 +83,19 @@
         </div>
         <p style="font-size:.83em;color:#555;margin-top:8px;text-align:justify;">
           Quantifies how partition stability, minority class recovery, and topological interpretability trade off across K-means, SOMs, consensus K-means, and four modern baselines on 10,095 TCGA cancer RNA samples (13,634 genes, 19 cancer types). At matched prototype budgets, K-means outperforms SOMs on both stability and minority recovery, while SOMs uniquely provide 2D topological visualization. No single method optimizes all three properties.
+        </p>
+      </div>
+
+      <!-- In Press paper -->
+      <div class="featured-paper fade-in two" style="border-left-color:#e67e22;background:#fffaf5;">
+        <div class="fp-label" style="background:#e67e22;"><span class="glyphicon glyphicon-time"></span> In Press</div>
+        <h4>Machine Learning Modeling for Identifying Cancer Subtypes from Gene Expressions <span class="pub-new" style="background:#e67e22;">IN PRESS</span></h4>
+        <div class="pub-meta">
+          <strong>Imtiaz Ahmed, Hamdy Soliman</strong> &mdash; <em>Applied Computational Intelligence and Soft Computing</em>
+          <span class="pub-year">(Accepted, awaiting publication)</span>
+        </div>
+        <p style="font-size:.83em;color:#555;margin-top:8px;text-align:justify;">
+          Applies machine learning modeling to identify cancer subtypes from gene expression profiles, advancing computational approaches to precision oncology.
         </p>
       </div>
 
@@ -112,7 +125,7 @@
 
       <!-- JOURNALS -->
       <section class="fade-in three" id="section-journal">
-        <h3 class="section-header"><span class="glyphicon glyphicon-open-file"></span>Peer-Reviewed Journals <span style="font-size:.7em;font-weight:400;color:#bdc3c7;">(27 articles)</span></h3>
+        <h3 class="section-header"><span class="glyphicon glyphicon-open-file"></span>Peer-Reviewed Journals <span style="font-size:.7em;font-weight:400;color:#bdc3c7;">(27 published + 1 in press)</span></h3>
         <div id="journal_section"><p class="text-muted">Loading…</p></div>
       </section>
 
@@ -195,9 +208,14 @@ fetch('xml/publication_journal.xml').then(r=>r.text()).then(str=>{
   // Build manually with extra recent entries at top
   var extraHtml='<table class="table" style="table-layout:fixed;width:100%;"><tbody>';
   var extras=[
+    {title:'Machine Learning Modeling for Identifying Cancer Subtypes from Gene Expressions',uri:'',authors:'Imtiaz Ahmed, Hamdy Soliman',publisher:'Applied Computational Intelligence and Soft Computing',details:'<span style="color:#e67e22;font-weight:700;">In Press</span>',year:'In Press',isnew:true,inpress:true},
     {title:'Quantifying the Stability–Recovery–Interpretability Trade-Off Between K-Means and Self-Organizing Maps for High-Dimensional Imbalanced Data',uri:'https://www.mdpi.com/3042-8831/1/2/10',authors:'Imtiaz Ahmed, Hamdy Soliman',publisher:'AI for Engineering (MDPI)',details:'Vol. 1, Issue 2, Article 10. DOI: 10.3390/aieng1020010',year:'Aug 2026',isnew:true},
     {title:'Multi-Agent Edge AI for Coordinated Event Prediction over Multi-Layer Wireless Sensor Networks: A Smart Competitive Approach',uri:'https://doi.org/10.3390/electronics15153331',authors:'Haque, A.; Soliman, H.',publisher:'Electronics (MDPI)',details:'Vol. 15(15), 3331',year:'Jul 2026'},
-    {title:'Edge-Level Forest Fire Prediction with Selective Communication in Hierarchical Wireless Sensor Networks',uri:'https://doi.org/10.3390/electronics15040881',authors:'Haque, A.; Soliman, H.',publisher:'Electronics (MDPI)',details:'Vol. 15(4), 881',year:'2026'}
+    {title:'Edge-Level Forest Fire Prediction with Selective Communication in Hierarchical Wireless Sensor Networks',uri:'https://doi.org/10.3390/electronics15040881',authors:'Haque, A.; Soliman, H.',publisher:'Electronics (MDPI)',details:'Vol. 15(4), 881',year:'2026'},
+    {title:'A Transformer-Based Autoencoder with Isolation Forest and XGBoost for Malfunction and Intrusion Detection in WSNs for Forest Fire Prediction',uri:'https://doi.org/10.3390/fi17040164',authors:'Ahshanul Haque, Hamdy Soliman',publisher:'MDPI Future Internet',details:'Vol. 17, Issue 4, 164',year:'2025'},
+    {title:'Application of VGG16 Transfer Learning for Breast Cancer Detection',uri:'https://doi.org/10.3390/info16030227',authors:'Tanjim Fatima, Hamdy Soliman',publisher:'MDPI Information',details:'Vol. 16, Issue 3, 227',year:'Mar 2025'},
+    {title:'Hierarchical Early Wireless Forest Fire Prediction System Utilizing Virtual Sensors',uri:'https://doi.org/10.3390/electronics14081634',authors:'A. Haque, H. Soliman',publisher:'MDPI Electronics',details:'Vol. 14(8), 1634',year:'2025'},
+    {title:'Smart Wireless Sensor Networks with Virtual Sensors for Forest Fire Evolution Prediction Using Machine Learning',uri:'https://doi.org/10.3390/electronics14020223',authors:'A. Haque, H. Soliman',publisher:'MDPI Electronics',details:'Vol. 14(2), 223',year:'2025'},
   ];
   var idx=1;
   for(var e=0;e<extras.length;e++){
@@ -309,23 +327,7 @@ document.getElementById('grants_section').innerHTML=`
   <div class="grant-title">Image Compression and Network Security</div>
   <div class="grant-meta"><strong>NMT Office of the President &amp; Research Foundation / Parke Grants</strong>
     &nbsp;|&nbsp; <span class="grant-amount">$170,000+</span>
-    <br><em>PI: Hamdy Soliman</em> &mdash; Presidential &amp; NMT Research Foundation grants
-  </div>
-</div>
-
-<div class="grant-card pi" data-type="grant" data-text="nmt research park patent development sensor machine learning security student support">
-  <div class="grant-title">Research Student Support for Patent Development Combining Sensor Systems, Machine Learning, and Security</div>
-  <div class="grant-meta"><strong style="color:var(--navy);">NMT Research Park (formerly NMT Research Foundation), via NMT President's Office</strong>
-    &nbsp;|&nbsp; <span class="grant-amount">Undisclosed</span> &nbsp;|&nbsp; Ongoing
-    <br><em>PI: Hamdy Soliman</em> &mdash; Support for students working on development of filed and ongoing patents integrating sensor technologies, machine learning, and security.
-  </div>
-</div>
-
-<div class="grant-card co-pi" data-type="grant" data-text="lanl los alamos national laboratory machine learning data science genetics mazumdar">
-  <div class="grant-title">Advances in Machine Learning Methods: Methodologies for a Data Science Approach to Applications of Genetics</div>
-  <div class="grant-meta"><strong style="color:#8e44ad;">Los Alamos National Laboratory (LANL)</strong>
-    &nbsp;|&nbsp; <span class="grant-amount">$91,944</span>
-    <br><em>Co-PI: Hamdy Soliman</em> &mdash; PI: Dr. Mazumdar &mdash; Machine learning methodologies applied to genetics-based applications.
+    <br>Presidential &amp; NMT Research Foundation grants — Hamdy Soliman (PI)
   </div>
 </div>
 `;
